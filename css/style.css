@@ -264,6 +264,28 @@ header nav {
 }
 /***** Секция PROMO (конец) *****/
 
+/***** Секция COMPANIES (начало) *****/
+.companies {
+    margin-top: -50px;
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.companies .container {
+    flex-direction: column;
+}
+
+.companies .title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.companies .companies-list {
+    justify-content: space-between;
+}
+/***** Секция COMPANIES (конец) *****/
+
+
 @media(min-width: 1300px) {
     .container {
         max-width: 1290px;
@@ -316,16 +338,23 @@ header nav {
         text-align: center;
     }
 
-    .promo-content .title {
+    .title {
         font-size: 32px;
-        min-width: 276px;
-        max-width: 642px;
+    } 
+    
+    .promo-content .title {
+         min-width: 276px;
+         max-width: 642px;
     }
 
     .promo-img {
         position: relative !important;
         top: 0 !important;
         left: 0 !important;
+    }
+
+    .companies {
+        margin-top: 75px;
     }
 }
 
@@ -356,8 +385,11 @@ header nav {
         font-size: 13px;
     }
 
-    .promo-content .title {
+    .title {
         font-size: 28px;
+    }
+
+    .promo-content .title {        
         max-width: 276px;
     }
 
@@ -368,5 +400,8 @@ header nav {
 
     .buttons .btn {
         margin-bottom: 20px;
+    }
+    .companies {
+        margin-top: 0;
     }
 } 
